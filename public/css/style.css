@@ -150,7 +150,6 @@ a:focus {
   .scrolled .resumo_fn_navigation,
   .scrolled .resumo_fn_right {
     width: 32%;
-    min-width: 480px;
   }
   .scrolled .resumo_fn_left {
     width: 68%;
