@@ -3,7 +3,7 @@ import { customersSliderProps } from "../sliderProps";
 
 const Customers = () => {
   return (
-    <section id="customers">
+    <section id="links">
       <div className="container">
         <div className="roww">
           {/* Main Title */}

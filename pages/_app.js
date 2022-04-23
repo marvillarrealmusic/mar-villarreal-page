@@ -13,11 +13,22 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
         <link rel="icon" href="img/favicon.ico" />
-        <meta name="description" content="personal portfolio react template" />
+        <meta name="description" content="Mar Villarreal official web page" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         ></meta>
+        <meta property="og:title" content="Mar Villarreal" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://www.marvillarreal.com/" />
+        <meta
+          property="og:image"
+          content="https://www.marvillarreal.com/img/photo.jpg"
+        />
+        <meta
+          property="og:description"
+          content="Mar Villarreal official web page"
+        />
       </Head>
       <Component {...pageProps} />
     </Fragment>
