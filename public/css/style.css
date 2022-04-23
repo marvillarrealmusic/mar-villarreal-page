@@ -1494,10 +1494,10 @@ a:focus {
 /*------------------------------------------------------------------*/
 /*	14) Partners
 /*------------------------------------------------------------------*/
-#customers {
+#links {
   padding: 150px 0 42px;
 }
-#customers .resumo_fn_main_title {
+#links .resumo_fn_main_title {
   margin-bottom: 70px;
 }
 .resumo_fn_partners {
@@ -2336,7 +2336,7 @@ a:focus {
   #services {
     padding-top: 100px;
   }
-  #customers {
+  #links {
     padding-top: 100px;
   }
   #news {
