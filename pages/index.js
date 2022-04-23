@@ -1,6 +1,6 @@
 import About from "../src/components/About";
 import Contact from "../src/components/Contact";
-import Customers from "../src/components/Customers";
+import Links from "../src/components/Links";
 import Home from "../src/components/Home";
 import News from "../src/components/News";
 import Portfolio from "../src/components/Portfolio";
@@ -21,9 +21,9 @@ const Index = () => {
       {/* Services Section */}
       {/* <Services /> */}
       {/* /Services Section */}
-      {/* Customers Section */}
-      {/* <Customers /> */}
-      {/* /Customers Section */}
+      {/* Links Section */}
+      <Links />
+      {/* /Links Section */}
       {/* News Section */}
       {/* <News /> */}
       {/* /News Section */}

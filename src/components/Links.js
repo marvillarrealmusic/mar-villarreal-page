@@ -7,66 +7,78 @@ const Customers = () => {
         <div className="roww">
           {/* Main Title */}
           <div className="resumo_fn_main_title">
-            <h3 className="subtitle">Customers</h3>
-            <h3 className="title">Happy People</h3>
+            <h3 className="subtitle">Links</h3>
+            <h3 className="title">Platforms &amp; Social</h3>
           </div>
           {/* /Main Title */}
           {/* Partners */}
           <div className="resumo_fn_partners">
             <ul>
               <li>
-                <a href="https://envato.com/"  rel="noreferrer" target="_blank">
-                  <img src="img/partners/1.png" alt="image" />
-                </a>
-              </li>
-              <li>
-                <a href="https://frenify.com/"  rel="noreferrer" target="_blank">
-                  <img src="img/partners/2.png" alt="image" />
+                <a
+                  href="https://www.instagram.com/marvillarrealmusic"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <img src="img/partners/instagram-logo.png" alt="instagram" />
                 </a>
               </li>
               <li>
                 <a
-                  href="https://themeforest.net/item/rewall-pesonal-portfolio-react-nextjs-template/34826425"
+                  href="https://open.spotify.com/artist/5Yq88YEjyRPaYnOumCq34g"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <img src="img/partners/spotify-logo.png" alt="spotify" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/c/MarVillarreal"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <img src="img/partners/youtube-logo.png" alt="youtube" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://soundcloud.com/marvillarrealmusic"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src="img/partners/3.png" alt="image" />
+                  <img
+                    src="img/partners/soundcloud-logo.png"
+                    alt="soundcloud"
+                  />
                 </a>
               </li>
               <li>
                 <a
-                  href="https://themeforest.net/item/artemiz-blog-podcast-wordpress-theme/28455063"
+                  href="https://www.facebook.com/marvillarrealcr/"
                   target="_blank"
-                  rel="noreferrer"                 
+                  rel="noreferrer"
                 >
-                  <img src="img/partners/4.png" alt="image" />
+                  <img src="img/partners/facebook-logo.png" alt="facebook" />
                 </a>
               </li>
               <li>
-                <a href="https://themeforest.net/item/wetland-multi-purpose-react-next-js-template-for-startup/33851796"   rel="noreferrer" target="_blank">
-                  <img src="img/partners/5.png" alt="image" />
-                </a>
-              </li>
-              <li>
-                <a href="https://themeforest.net/item/edunet-react-personal-tutor-lms-dashboard-ui-kit/31635576"  rel="noreferrer" target="_blank">
-                  <img src="img/partners/6.png" alt="image" />
-                </a>
-              </li>
-              <li>
-                <a href="https://themeforest.net/item/appz-mobile-app-landing-react-nextjs-template/34385390"  rel="noreferrer" target="_blank">
-                  <img src="img/partners/7.png" alt="image" />
-                </a>
-              </li>
-              <li>
-                <a href="https://themeforest.net/item/rewall-pesonal-portfolio-react-nextjs-template/34826425"  rel="noreferrer" target="_blank">
-                  <img src="img/partners/3.png" alt="image" />
+                <a
+                  href="https://music.apple.com/es/artist/mar-villarreal/1204725571"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    src="img/partners/apple-music-logo.png"
+                    alt="apple-music"
+                  />
                 </a>
               </li>
             </ul>
           </div>
           {/* /Partners */}
           {/* Testimonials */}
-          <div className="resumo_fn_testimonials">
+          {/* <div className="resumo_fn_testimonials">
             <div className="my__nav">
               <a href="#" className="prev">
                 <span />
@@ -76,7 +88,7 @@ const Customers = () => {
               </a>
             </div>
             <Swiper {...customersSliderProps} className="owl-carousel">
-              <SwiperSlide className="item" key='1'>
+              <SwiperSlide className="item" key="1">
                 <div className="title_holder">
                   <p className="desc">
                     “ They really nailed it. This is one of the best themes I
@@ -88,7 +100,7 @@ const Customers = () => {
                   <h3 className="subtitle">Freelancer &amp; Designer</h3>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className="item" key='2'>
+              <SwiperSlide className="item" key="2">
                 <div className="title_holder">
                   <p className="desc">
                     {`“ This was exactly what I needed for my portfolio,
@@ -101,7 +113,7 @@ const Customers = () => {
                   <h3 className="subtitle">Photographer</h3>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className="item" key='3'>
+              <SwiperSlide className="item" key="3">
                 <div className="title_holder">
                   <p className="desc">
                     “ Had a problem with the layout after Installation- found no
@@ -114,7 +126,7 @@ const Customers = () => {
                 </div>
               </SwiperSlide>
             </Swiper>
-          </div>
+          </div> */}
           {/* /Testimonials */}
         </div>
       </div>
