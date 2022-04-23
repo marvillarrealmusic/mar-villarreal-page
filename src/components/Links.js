@@ -20,10 +20,13 @@ const Customers = () => {
                   href="https://www.instagram.com/marvillarrealmusic"
                   rel="noreferrer"
                   target="_blank"
+                  aria-label="Mar Villarreal Instagram page"
                 >
                   <img
                     src="img/partners/instagram-logo.png"
                     loading="lazy"
+                    width="180"
+                    height="auto"
                     alt="instagram"
                   />
                 </a>
@@ -33,10 +36,13 @@ const Customers = () => {
                   href="https://open.spotify.com/artist/5Yq88YEjyRPaYnOumCq34g"
                   rel="noreferrer"
                   target="_blank"
+                  aria-label="Mar Villarreal Spotify page"
                 >
                   <img
                     src="img/partners/spotify-logo.png"
                     loading="lazy"
+                    width="180"
+                    height="auto"
                     alt="spotify"
                   />
                 </a>
@@ -45,11 +51,14 @@ const Customers = () => {
                 <a
                   href="https://www.youtube.com/c/MarVillarreal"
                   rel="noreferrer"
+                  aria-label="Mar Villarreal Youtube page"
                   target="_blank"
                 >
                   <img
                     src="img/partners/youtube-logo.png"
                     loading="lazy"
+                    width="180"
+                    height="auto"
                     alt="youtube"
                   />
                 </a>
@@ -59,10 +68,13 @@ const Customers = () => {
                   href="https://soundcloud.com/marvillarrealmusic"
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="Mar Villarreal Soundcloud page"
                 >
                   <img
                     src="img/partners/soundcloud-logo.png"
                     loading="lazy"
+                    width="180"
+                    height="auto"
                     alt="soundcloud"
                   />
                 </a>
@@ -72,10 +84,13 @@ const Customers = () => {
                   href="https://www.facebook.com/marvillarrealcr/"
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="Mar Villarreal Facebook page"
                 >
                   <img
                     src="img/partners/facebook-logo.png"
                     loading="lazy"
+                    width="180"
+                    height="auto"
                     alt="facebook"
                   />
                 </a>
@@ -89,6 +104,8 @@ const Customers = () => {
                   <img
                     src="img/partners/apple-music-logo.png"
                     loading="lazy"
+                    width="180"
+                    height="auto"
                     alt="apple-music"
                   />
                 </a>

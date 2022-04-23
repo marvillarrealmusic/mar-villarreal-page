@@ -30,7 +30,7 @@ const PanelContent = () => {
           <div className="abs_img" data-bg-img="img/photo.jpg" />
         </div>
         <div className="title_holder">
-          <h5>Hi There! I am</h5>
+          <div className="h5">Hi There! I am</div>
           <p className="h3 animated_title_wrapper">
             <span className="animated_title" />
           </p>
@@ -53,7 +53,7 @@ const PanelContent = () => {
           width="100%"
           height="80"
           frameBorder="0"
-          allowfullscreen=""
+          allowFullScreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         ></iframe>
         {/* <a href="#contact">

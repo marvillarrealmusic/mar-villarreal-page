@@ -5,7 +5,12 @@ const Footer = () => {
   return (
     <footer id="footer">
       <div className="footer_top">
-        <a href="#" onClick={() => scrollTop()} className="resumo_fn_totop">
+        <a
+          href="#"
+          onClick={() => scrollTop()}
+          className="resumo_fn_totop"
+          aria-label="Go to top"
+        >
           <span />
         </a>
       </div>

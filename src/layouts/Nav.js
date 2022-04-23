@@ -11,9 +11,19 @@ const Nav = ({ close, trigger }) => {
 
   return (
     <Fragment>
-      <a href="#" className="resumo_fn_nav_overlay" onClick={() => close()} />
+      <a
+        href="#"
+        className="resumo_fn_nav_overlay"
+        onClick={() => close()}
+        aria-label="Close Side Navigation"
+      />
       <div className="resumo_fn_navigation">
-        <a href="#" className="closer" onClick={() => close()} />
+        <a
+          href="#"
+          className="closer"
+          onClick={() => close()}
+          aria-label="Close Side Navigation"
+        />
         {/* Navigation Content */}
         <div className="nav_in">
           <nav id="nav">
@@ -43,6 +53,7 @@ const Nav = ({ close, trigger }) => {
                   <a
                     href="https://www.instagram.com/marvillarrealmusic/?hl=es"
                     target="_blank"
+                    aria-label="Mar Villarreal Instagram page"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -67,6 +78,7 @@ const Nav = ({ close, trigger }) => {
                   <a
                     href="https://open.spotify.com/artist/5Yq88YEjyRPaYnOumCq34g"
                     target="_blank"
+                    aria-label="Mar Villarreal Spotify page"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -94,6 +106,7 @@ const Nav = ({ close, trigger }) => {
                   <a
                     href="https://www.youtube.com/c/MarVillarreal"
                     target="_blank"
+                    aria-label="Mar Villarreal Youtube page"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -121,6 +134,7 @@ const Nav = ({ close, trigger }) => {
                   <a
                     href="https://soundcloud.com/marvillarrealmusic"
                     target="_blank"
+                    aria-label="Mar Villarreal SoundCloud page"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -198,6 +212,7 @@ const Nav = ({ close, trigger }) => {
                   <a
                     href="https://www.facebook.com/marvillarrealcr/"
                     target="_blank"
+                    aria-label="Mar Villarreal Facebook page"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -216,6 +231,7 @@ const Nav = ({ close, trigger }) => {
                   <a
                     href="https://music.apple.com/es/artist/mar-villarreal/1204725571"
                     target="_blank"
+                    aria-label="Mar Villarreal Apple Music page"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

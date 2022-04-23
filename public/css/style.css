@@ -37,7 +37,7 @@
 /*	01) Base
 /*------------------------------------------------------------------*/
 :root {
-  --mc: #987750;
+  --mc: #ab8961;
   --tc: #888;
 }
 html {
@@ -232,7 +232,7 @@ a:focus {
   text-align: center;
   padding: 27px 0 20px;
 }
-.resumo_fn_right .title_holder h5 {
+.resumo_fn_right .title_holder .h5 {
   margin: 0;
   padding: 0;
   font-size: 18px;

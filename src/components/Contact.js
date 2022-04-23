@@ -100,7 +100,9 @@ const Contact = () => {
                       id="name"
                       type="text"
                     />
-                    <span className="moving_placeholder">Name *</span>
+                    <label for="name" className="moving_placeholder">
+                      Name *
+                    </label>
                   </div>
                 </div>
                 <div className="item half">
@@ -118,7 +120,9 @@ const Contact = () => {
                       id="email"
                       type="email"
                     />
-                    <span className="moving_placeholder">Email *</span>
+                    <label for="email" className="moving_placeholder">
+                      Email *
+                    </label>
                   </div>
                 </div>
                 <div className="item">
@@ -136,7 +140,9 @@ const Contact = () => {
                       name="phone"
                       type="text"
                     />
-                    <span className="moving_placeholder">Phone</span>
+                    <label for="phone" className="moving_placeholder">
+                      Phone
+                    </label>
                   </div>
                 </div>
                 <div className="item">
@@ -153,7 +159,9 @@ const Contact = () => {
                       value={message}
                       id="message"
                     />
-                    <span className="moving_placeholder">Message</span>
+                    <label for="message" className="moving_placeholder">
+                      Message
+                    </label>
                   </div>
                 </div>
                 <div className="item">

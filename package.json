@@ -7,7 +7,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "deploy": "yarn install && next build && next export"
+    "deploy": "NODE_ENV=production yarn install && next build && next export"
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
