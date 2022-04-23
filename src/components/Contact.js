@@ -1,26 +1,47 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
+
 const Contact = () => {
-  const [form, setForm] = useState({ email: "", name: "", phone: "", msg: "" });
+  const [form, setForm] = useState({
+    email: "",
+    name: "",
+    phone: "",
+    message: "",
+  });
   const [active, setActive] = useState(null);
+  const [validationError, setValidationError] = useState(false);
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
   const onChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-  const { email, name, phone, msg } = form;
+  const { email, name, phone, message } = form;
+
   const onSubmit = (e) => {
     e.preventDefault();
-    if (email && name && phone && msg) {
-      setSuccess(true);
-      setTimeout(() => {
-        setForm({ email: "", name: "", phone: "", msg: "" });
-        setSuccess(false);
-      }, 2000);
+    if (email && name && phone && message) {
+      emailjs
+        .send("service_9dps9dd", "template_h7bob5f", form, "0r6pa5iarIa8SHb_U")
+        .then(
+          (result) => {
+            setSuccess(true);
+            setTimeout(() => {
+              setForm({ email: "", name: "", phone: "", message: "" });
+              setSuccess(false);
+            }, 5000);
+          },
+          (error) => {
+            setError(true);
+            setTimeout(() => {
+              setError(false);
+            }, 5000);
+          }
+        );
     } else {
-      setError(true);
+      setValidationError(true);
       setTimeout(() => {
-        setError(false);
-      }, 2000);
+        setValidationError(false);
+      }, 3000);
     }
   };
   return (
@@ -51,9 +72,15 @@ const Contact = () => {
             </div>
             <div
               className="empty_notice"
-              style={{ display: error ? "block" : "none" }}
+              style={{ display: validationError ? "block" : "none" }}
             >
               <span>Please Fill Required Fields!</span>
+            </div>
+            <div
+              className="empty_notice"
+              style={{ display: error ? "block" : "none" }}
+            >
+              <span>Error submitting the form</span>
             </div>
             {/* */}
             <div className="items_wrap">
@@ -115,15 +142,15 @@ const Contact = () => {
                 <div className="item">
                   <div
                     className={`input_wrapper ${
-                      active === "message" || msg ? "active" : ""
+                      active === "message" || message ? "active" : ""
                     }`}
                   >
                     <textarea
                       onFocus={() => setActive("message")}
                       onBlur={() => setActive(null)}
-                      name="msg"
+                      name="message"
                       onChange={(e) => onChange(e)}
-                      value={msg}
+                      value={message}
                       id="message"
                     />
                     <span className="moving_placeholder">Message</span>
