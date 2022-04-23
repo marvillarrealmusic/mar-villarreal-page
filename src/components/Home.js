@@ -8,8 +8,9 @@ const Home = () => {
             <h3 className="subtitle">Introduction</h3>
             <h3 className="title">Creative</h3>
             <p className="desc">
-              I sing, produce and write songs. The influence of Soul, Jazz,
-              Reggae and R&amp;B leaded me to create my own musical style.
+              My name is Mar Villarreal. I sing, produce and write songs. The
+              influence of Soul, Jazz, Reggae and R&amp;B leaded me to create my
+              own musical style.
             </p>
             <p className="desc">
               I am also involved as a consultant in different projects providing
