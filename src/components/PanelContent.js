@@ -31,19 +31,38 @@ const PanelContent = () => {
         </div>
         <div className="title_holder">
           <h5>Hi There! I am</h5>
-          <p className="h3">
+          <p className="h3 animated_title_wrapper">
             <span className="animated_title" />
           </p>
         </div>
       </div>
-      {/* <div className="right_bottom">
-        <a href="#contact">
+      <div className="right_bottom">
+        {/* <iframe
+          title="Soundcloud widget"
+          src="https://w.soundcloud.com/player/?url=https://soundcloud.com/marvillarrealmusic/tracks&amp;download=false&amp;sharing=false&amp;show_artwork=false&amp;show_playcount=false&amp;show_user=false&amp;auto_play=true"
+          width="100%"
+          height="166"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+        /> */}
+        <iframe
+          title="Spotify widget"
+          style={{ borderRadius: 12 }}
+          src="https://open.spotify.com/embed/artist/5Yq88YEjyRPaYnOumCq34g?utm_source=generator"
+          width="100%"
+          height="80"
+          frameBorder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        ></iframe>
+        {/* <a href="#contact">
           <span className="circle" />
           <span className="text">
             I’m available for a freelance job. Hire me
           </span>
-        </a>
-      </div> */}
+        </a> */}
+      </div>
     </div>
   );
 };

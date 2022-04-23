@@ -51,6 +51,7 @@ html {
   position: relative;
   font-family: Jost;
   color: #ddd;
+  min-height: 43.2px;
 }
 .light .h3 {
   color: #000;

@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { customersSliderProps } from "../sliderProps";
+
 const Customers = () => {
   return (
     <section id="customers">
@@ -20,7 +21,11 @@ const Customers = () => {
                   rel="noreferrer"
                   target="_blank"
                 >
-                  <img src="img/partners/instagram-logo.png" alt="instagram" />
+                  <img
+                    src="img/partners/instagram-logo.png"
+                    loading="lazy"
+                    alt="instagram"
+                  />
                 </a>
               </li>
               <li>
@@ -29,7 +34,11 @@ const Customers = () => {
                   rel="noreferrer"
                   target="_blank"
                 >
-                  <img src="img/partners/spotify-logo.png" alt="spotify" />
+                  <img
+                    src="img/partners/spotify-logo.png"
+                    loading="lazy"
+                    alt="spotify"
+                  />
                 </a>
               </li>
               <li>
@@ -38,7 +47,11 @@ const Customers = () => {
                   rel="noreferrer"
                   target="_blank"
                 >
-                  <img src="img/partners/youtube-logo.png" alt="youtube" />
+                  <img
+                    src="img/partners/youtube-logo.png"
+                    loading="lazy"
+                    alt="youtube"
+                  />
                 </a>
               </li>
               <li>
@@ -49,6 +62,7 @@ const Customers = () => {
                 >
                   <img
                     src="img/partners/soundcloud-logo.png"
+                    loading="lazy"
                     alt="soundcloud"
                   />
                 </a>
@@ -59,7 +73,11 @@ const Customers = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src="img/partners/facebook-logo.png" alt="facebook" />
+                  <img
+                    src="img/partners/facebook-logo.png"
+                    loading="lazy"
+                    alt="facebook"
+                  />
                 </a>
               </li>
               <li>
@@ -70,6 +88,7 @@ const Customers = () => {
                 >
                   <img
                     src="img/partners/apple-music-logo.png"
+                    loading="lazy"
                     alt="apple-music"
                   />
                 </a>
