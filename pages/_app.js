@@ -14,7 +14,10 @@ function MyApp({ Component, pageProps }) {
         />
         <link rel="icon" href="img/favicon.ico" />
         <meta name="description" content="personal portfolio react template" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        ></meta>
       </Head>
       <Component {...pageProps} />
     </Fragment>

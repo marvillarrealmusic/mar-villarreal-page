@@ -53,9 +53,9 @@ const Contact = () => {
             <h3 className="subtitle">Contact</h3>
             <h3 className="title">Get In Touch</h3>
             <p className="desc">
-              If you have any suggestion, project or even you want to say
-              “hello”, please fill out the form below and I will reply you
-              shortly.
+              I'd love to hear from you! For any suggestion, booking inquiries,
+              collaborations or general information, please fill out the form
+              below and I will reply you shortly.
             </p>
           </div>
           {/* /Main Title */}
