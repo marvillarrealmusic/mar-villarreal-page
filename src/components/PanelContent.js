@@ -12,6 +12,7 @@ const PanelContent = () => {
         "Creative",
         "Designer",
         "Content Manager",
+        "Marketing Manager",
       ],
       loop: true,
       smartBackspace: false,
