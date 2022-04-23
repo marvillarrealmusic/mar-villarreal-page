@@ -146,15 +146,15 @@ const Contact = () => {
           {/* /Contact Form */}
           {/* Contact Info */}
           <div className="resumo_fn_contact_info">
-            <p>Address</p>
+            {/* <p>Address</p>
             <h3>69 Queen St, London, United Kingdom</h3>
             <p>Phone</p>
             <h3>
               <a href="tel:+7068980751">(+706) 898-0751</a>
-            </h3>
+            </h3> */}
             <p>
-              <a className="fn__link" href="mailto:trendycoder.com@gmail.com">
-                trendycoder.com@gmail.com
+              <a className="fn__link" href="mailto:info@marvillarreal.com">
+                info@marvillarreal.com
               </a>
             </p>
           </div>

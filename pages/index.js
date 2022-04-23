@@ -13,19 +13,19 @@ const Index = () => {
       <Home />
       {/* /Home Section */}
       {/* About Section */}
-      <About />
+      {/* <About /> */}
       {/* /About Section */}
       {/* Portfolio Section */}
-      <Portfolio />
+      {/* <Portfolio /> */}
       {/* /Portfolio Section */}
       {/* Services Section */}
-      <Services />
+      {/* <Services /> */}
       {/* /Services Section */}
       {/* Customers Section */}
-      <Customers />
+      {/* <Customers /> */}
       {/* /Customers Section */}
       {/* News Section */}
-      <News />
+      {/* <News /> */}
       {/* /News Section */}
       {/* Contact Section */}
       <Contact />
