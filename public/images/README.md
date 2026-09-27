@@ -8,7 +8,7 @@ Cada archivo tiene una función concreta. Puedes reemplazar las fotografías edi
 | `logo-mar.png` | Cabecera | Logo de Mar que sustituye al nombre escrito cuando se configura `site.logo` en el YAML. Conserva el logo completo; se adapta al espacio disponible en móvil y escritorio. |
 | `biography.jpg` | Biografía | Fotografía junto al texto biográfico. También se muestra en formato vertical. |
 | `portfolio/nerea.jpg` | Mar Villarreal Producción | Diseño del perfil de Instagram de Nerea, extraído del portfolio de Canva de Mar y optimizado en JPEG para la web. |
-| `portfolio/alexia-yoga.jpg` | Mar Villarreal Producción | Símbolo de identidad visual de Alexia Yoga, extraído del portfolio de Canva de Mar. |
+| `portfolio/alexia-yoga.jpg` | Mar Villarreal Producción | Collage horizontal sin texto para Alexia Yoga, creado con las fotos, el símbolo y la paleta de su proyecto de marca. |
 | `releases/5iw3dCleo3lcYovu6GAOZB.jpg` | Últimos lanzamientos | Portada de AMAR. Generada por la importación. |
 | `releases/1B9WOBwcZYPALYEQ2ZAgh6.jpg` | Últimos lanzamientos | Portada de Rosa Pastel. Generada por la importación. |
 | `releases/4IQLfJMwO94ATJlDU2HFy0.jpg` | Últimos lanzamientos | Portada de Rincón Florido. Generada por la importación. |
@@ -31,7 +31,7 @@ Los proyectos de `services.portfolio.items` utilizan imágenes locales de `portf
 Fuentes de las imágenes iniciales, verificadas en el [portfolio de Mar](https://marvillarreal.my.canva.site/):
 
 - Nerea: `https://marvillarreal.my.canva.site/_assets/media/187bd212bfb941ae7650087d09f6af24.png`.
-- Alexia Yoga: `https://marvillarreal.my.canva.site/_assets/media/731edd5b18d74579ad9c9d5ac11ef29a.jpg`.
+- Alexia Yoga: composición visual creada a partir de la página del proyecto en el [portfolio de Mar](https://marvillarreal.my.canva.site/), usando sus fotos de yoga y bienestar, símbolo y paleta.
 
 ## Portadas y miniaturas automáticas
 
