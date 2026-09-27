@@ -1,0 +1,239 @@
+# Archivo de contenido de Mar Villarreal.
+# Conserva los nombres de campo y la indentación; edita español (es) e inglés (en).
+# Las imágenes se guardan en public/images y se indican con una ruta /images/.
+site:
+  name: Mar Villarreal
+  url: https://www.marvillarreal.com
+  contactEmail: info@marvillarreal.com
+  spotifyArtistUrl: https://open.spotify.com/artist/5Yq88YEjyRPaYnOumCq34g
+
+seo:
+  title:
+    es: Mar Villarreal | Música y creatividad
+    en: Mar Villarreal | Music and creativity
+  description:
+    es: Cantante, compositora y productora costarricense. Música y creatividad con
+      raíces en el soul, el reggae y el R&B.
+    en: Costa Rican singer, songwriter and producer. Music and creativity rooted in
+      soul, reggae and R&B.
+  image: /images/social-preview.jpg
+
+navigation:
+  home: { es: Inicio, en: Home }
+  releases: { es: Música, en: Music }
+  videos: { es: Vídeos, en: Videos }
+  biography: { es: Sobre Mar, en: About }
+  services: { es: Servicios, en: Services }
+  social: { es: Encuéntrame, en: Find me }
+  contact: { es: Contacto, en: Contact }
+
+ui:
+  skipToContent: { es: Saltar al contenido, en: Skip to content }
+  openMenu: { es: Abrir menú, en: Open menu }
+  closeMenu: { es: Cerrar menú, en: Close menu }
+  languageSelector: { es: Idioma, en: Language }
+  navigationLabel: { es: Navegación principal, en: Main navigation }
+  spanish: { es: Español, en: Spanish }
+  english: { es: Inglés, en: English }
+  backToTop: { es: Volver arriba, en: Back to top }
+
+hero:
+  eyebrow:
+    es: Cantante · Compositora · Productora
+    en: Singer · Songwriter · Producer
+  title: { es: Mar Villarreal, en: Mar Villarreal }
+  description:
+    es: |
+      De la costa pacífica de Costa Rica al mundo. Creo canciones que unen soul, reggae, R&B y pop con una voz propia.
+    en: |
+      From Costa Rica’s Pacific coast to the world. I create songs blending soul, reggae, R&B and pop with a sound of my own.
+  primaryCta: { es: Escuchar música, en: Listen to my music }
+  secondaryCta: { es: Hablemos, en: Get in touch }
+  image:
+    src: /images/hero.jpg
+    alt:
+      es: Retrato de Mar Villarreal
+      en: Portrait of Mar Villarreal
+    position: center
+
+releases:
+  eyebrow: { es: Música nueva, en: New music }
+  title: { es: Últimos lanzamientos, en: Latest releases }
+  description:
+    es: Canciones para sentir, recordar y dejarse llevar.
+    en: Songs to feel, remember and get carried away by.
+  listenLabel: { es: Escuchar en Spotify, en: Listen on Spotify }
+  allMusicLabel: { es: Explorar toda mi música en Spotify, en: Explore all my music on Spotify }
+  playerTitle: { es: "Reproductor de Spotify: ", en: "Spotify player: " }
+  latestPlayerHeading: { es: Último lanzamiento, en: Latest release }
+  popularPlayerHeading: { es: Canciones populares, en: Popular songs }
+  popularPlayerTitle:
+    {
+      es: Canciones populares de Mar Villarreal en Spotify,
+      en: Popular songs by Mar Villarreal on Spotify
+    }
+  emptyMessage:
+    es: Descubre toda mi música en Spotify.
+    en: Find all my music on Spotify.
+  # Pega enlaces aquí. La Action completa items y descarga las portadas.
+  # Se muestran los tres más recientes; no edites items manualmente.
+  sources:
+    - https://open.spotify.com/album/5iw3dCleo3lcYovu6GAOZB
+    - https://open.spotify.com/album/1B9WOBwcZYPALYEQ2ZAgh6
+    - https://open.spotify.com/album/4IQLfJMwO94ATJlDU2HFy0
+  items:
+    - title: AMAR
+      releaseDate: 2026-07-23
+      cover:
+        src: /images/releases/5iw3dCleo3lcYovu6GAOZB.jpg
+        alt:
+          es: Portada de AMAR de Mar Villarreal
+          en: Cover of AMAR by Mar Villarreal
+        position: center
+      spotifyUrl: https://open.spotify.com/album/5iw3dCleo3lcYovu6GAOZB
+    - title: Rosa Pastel
+      releaseDate: 2026-05-15
+      cover:
+        src: /images/releases/1B9WOBwcZYPALYEQ2ZAgh6.jpg
+        alt:
+          es: Portada de Rosa Pastel de Mar Villarreal
+          en: Cover of Rosa Pastel by Mar Villarreal
+        position: center
+      spotifyUrl: https://open.spotify.com/album/1B9WOBwcZYPALYEQ2ZAgh6
+    - title: Rincón Florido
+      releaseDate: 2026-02-06
+      cover:
+        src: /images/releases/4IQLfJMwO94ATJlDU2HFy0.jpg
+        alt:
+          es: Portada de Rincón Florido de Mar Villarreal
+          en: Cover of Rincón Florido by Mar Villarreal
+        position: center
+      spotifyUrl: https://open.spotify.com/album/4IQLfJMwO94ATJlDU2HFy0
+
+videos:
+  eyebrow: { es: Música en imágenes, en: Music in pictures }
+  title: { es: Vídeos, en: Videos }
+  description:
+    es: Una mirada a mi música, dentro y fuera del escenario.
+    en: A look at my music, on and off the stage.
+  playLabel: { es: Reproducir vídeo, en: Play video }
+  watchLabel: { es: Ver en YouTube, en: Watch on YouTube }
+  emptyMessage:
+    es: Pronto encontrarás aquí mis vídeos.
+    en: My videos will be here soon.
+  # Pega un enlace por línea y muévelos para cambiar el orden.
+  # sources: [] significa que todavía no hay vídeos configurados.
+  sources:
+    - https://www.youtube.com/watch?v=7goPANMoxvo
+    - https://www.youtube.com/watch?v=9fM9qHG4ll8
+    - https://www.youtube.com/watch?v=qy1J8IbOHF8
+  # Datos generados por la Action; no edites items manualmente.
+  items:
+    - title: Mar Villarreal - Chico Astuto (Video Musical Oficial)
+      youtubeUrl: https://www.youtube.com/watch?v=7goPANMoxvo
+      thumbnail:
+        src: /images/videos/7goPANMoxvo.jpg
+        alt:
+          es: Miniatura del vídeo Mar Villarreal - Chico Astuto (Video Musical Oficial)
+          en: Thumbnail of the video Mar Villarreal - Chico Astuto (Video Musical Oficial)
+        position: center
+    - title: Mar Villarreal - CREATE (Video Musical Oficial)
+      youtubeUrl: https://www.youtube.com/watch?v=9fM9qHG4ll8
+      thumbnail:
+        src: /images/videos/9fM9qHG4ll8.jpg
+        alt:
+          es: Miniatura del vídeo Mar Villarreal - CREATE (Video Musical Oficial)
+          en: Thumbnail of the video Mar Villarreal - CREATE (Video Musical Oficial)
+        position: center
+    - title: Mar Villarreal -Trafalgar (Video Musical Oficial)
+      youtubeUrl: https://www.youtube.com/watch?v=qy1J8IbOHF8
+      thumbnail:
+        src: /images/videos/qy1J8IbOHF8.jpg
+        alt:
+          es: Miniatura del vídeo Mar Villarreal -Trafalgar (Video Musical Oficial)
+          en: Thumbnail of the video Mar Villarreal -Trafalgar (Video Musical Oficial)
+        position: center
+
+biography:
+  eyebrow: { es: Mi historia, en: My story }
+  title: { es: Música con raíces y movimiento, en: Music with roots and movement }
+  body:
+    es: |
+      Nací en Puntarenas, en la costa pacífica de Costa Rica, y desde pequeña la música forma parte de mi vida. Canto, compongo y produzco canciones inspiradas por el soul, el R&B, el reggae y el pop.
+
+      Cada canción es una oportunidad para experimentar y descubrir algo nuevo. Después de mi debut con «Made in Costa Rica», he seguido explorando sonidos y encontrando nuevas formas de contar historias.
+
+      Además de la música, trabajo como consultora creativa en proyectos de marca, redes sociales y marketing digital.
+    en: |
+      I was born in Puntarenas, on Costa Rica’s Pacific coast, and music has been part of my life since childhood. I sing, write and produce songs inspired by soul, R&B, reggae and pop.
+
+      Every song is an opportunity to experiment and discover something new. Since my debut with “Made in Costa Rica”, I have continued exploring sounds and finding new ways to tell stories.
+
+      Alongside music, I work as a creative consultant on branding, social media and digital marketing projects.
+  image:
+    src: /images/biography.jpg
+    alt:
+      es: Mar Villarreal, cantante y compositora
+      en: Mar Villarreal, singer and songwriter
+    position: center
+
+services:
+  eyebrow: { es: Trabajo creativo, en: Creative work }
+  title: { es: Ideas que toman forma, en: Ideas taking shape }
+  description:
+    es: También colaboro en proyectos que necesitan una mirada estratégica, cultural
+      y creativa.
+    en: I also collaborate on projects looking for a strategic, cultural and
+      creative perspective.
+  contactLabel: { es: Hablemos de tu proyecto, en: Let’s talk about your project }
+  items:
+    - title: { es: Estrategia de marca, en: Brand strategy }
+      description:
+        es: Identidad y dirección estratégica para crear marcas con personalidad y
+          conexión cultural.
+        en: Brand identity and strategic direction for businesses with personality and
+          cultural relevance.
+    - title: { es: Gestión de redes sociales, en: Social media management }
+      description:
+        es: Contenido y gestión de redes para fortalecer la comunidad y la presencia
+          digital.
+        en: Social content and account management to grow community and digital
+          presence.
+    - title: { es: Marketing digital, en: Digital marketing }
+      description:
+        es: Ideas y campañas digitales pensadas para conectar con las personas y hacer
+          crecer proyectos.
+        en: Digital ideas and campaigns designed to connect with people and grow
+          ambitious projects.
+
+social:
+  eyebrow: { es: Sigamos en contacto, en: Stay connected }
+  title: { es: Encuéntrame, en: Find me }
+  description:
+    es: Sígueme y descubre mi música y los proyectos en los que estoy trabajando.
+    en: Follow along for my music and the projects I’m working on.
+  items:
+    - { name: Instagram, url: https://www.instagram.com/marvillarrealmusic }
+    - { name: Spotify, url: https://open.spotify.com/artist/5Yq88YEjyRPaYnOumCq34g }
+    - { name: YouTube, url: https://www.youtube.com/c/MarVillarreal }
+    - { name: SoundCloud, url: https://soundcloud.com/marvillarrealmusic }
+    - { name: Facebook, url: https://www.facebook.com/marvillarrealcr/ }
+    - {
+        name: Apple Music,
+        url: https://music.apple.com/es/artist/mar-villarreal/1204725571
+      }
+
+contact:
+  eyebrow: { es: Para proyectos y colaboraciones, en: For projects and collaborations }
+  title: { es: Hablemos, en: Let’s talk }
+  description:
+    es: ¿Tienes un proyecto en mente o quieres trabajar conmigo? Escríbeme y
+      cuéntame un poco.
+    en: Have a project in mind or want to work together? Send me a note and tell me
+      about it.
+  emailLabel: { es: Escríbeme, en: Send me an email }
+
+footer:
+  rights:
+    es: Hecho con cariño.
+    en: Made with care.

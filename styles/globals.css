@@ -1,63 +1,11 @@
-@import "../public/css/base.css?ver=4";
-@import "../public/css/owl-carousel.css?ver=4";
-@import "../public/css/style.css?ver=4";
-@import "swiper/css";
-
-.owl-carousel {
-  display: block;
-}
-.typed-cursor {
-  display: none;
-}
-.right_in::-webkit-scrollbar {
-  width: 0px;
-  /* Track */
-}
-.right_in {
-  overflow: scroll;
-  height: calc(100% - 0px);
-}
-.resumo_fn_modalbox .img_holder img {
-  margin-bottom: -50% !important;
-  min-width: 100% !important;
-  max-height: unset !important;
-}
-
-#send_message {
-  /* border-color: rgba(0, 0, 0, 0.2);
-  color: #333; */
-  background: none;
-  width: 100%;
-  line-height: 0;
-  padding: 30px;
-}
-.light #send_message {
-  border-color: rgba(0, 0, 0, 0.2);
-  color: #333;
-}
-#send_message:hover {
-  border-color: var(--mc);
-  color: var(--mc);
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.h5 {
-  font-size: 20px;
-}
-
-.h3 {
-  margin: 0;
-  padding: 0 10px;
-  font-size: 30px;
-  min-height: 36px;
-  position: relative;
-  font-family: Jost;
-  color: #ddd;
-  min-height: 43.2px;
-}
-.light .h3 {
-  color: #000;
-}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+body { margin: 0; background: #f7f2e9; color: #24211e; font-family: Arial, Helvetica, sans-serif; font-size: 17px; line-height: 1.65; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+body, button, select { font-family: Arial, Helvetica, sans-serif; }
+a { color: inherit; }
+button, select { font: inherit; }
+button, a, select { -webkit-tap-highlight-color: transparent; }
+img { display: block; max-width: 100%; }
+::selection { background: #934b36; color: #fff; }
+:focus-visible { outline: 3px solid #934b36; outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; } }

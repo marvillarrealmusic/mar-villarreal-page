@@ -1,37 +1,10 @@
-import About from "../src/components/About";
-import Contact from "../src/components/Contact";
-import Links from "../src/components/Links";
-import Home from "../src/components/Home";
-import News from "../src/components/News";
-import Portfolio from "../src/components/Portfolio";
-import Services from "../src/components/Services";
-import Layout from "../src/layouts/Layout";
+import Site from "../src/components/Site";
+const { loadContent } = require("../src/lib/content.server.cjs");
 
-const Index = () => {
-  return (
-    <Layout>
-      <Home />
-      {/* /Home Section */}
-      {/* About Section */}
-      {/* <About /> */}
-      {/* /About Section */}
-      {/* Portfolio Section */}
-      {/* <Portfolio /> */}
-      {/* /Portfolio Section */}
-      {/* Services Section */}
-      {/* <Services /> */}
-      {/* /Services Section */}
-      {/* Links Section */}
-      <Links />
-      {/* /Links Section */}
-      {/* News Section */}
-      {/* <News /> */}
-      {/* /News Section */}
-      {/* Contact Section */}
-      <Contact />
-      {/* /Contact Section */}
-    </Layout>
-  );
-};
+export async function getStaticProps() {
+  return { props: { content: loadContent() } };
+}
 
-export default Index;
+export default function Index({ content }) {
+  return <Site content={content} />;
+}
