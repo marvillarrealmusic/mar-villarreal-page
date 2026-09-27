@@ -196,10 +196,10 @@ services:
   items:
     - title: { es: Branding y comunicación visual, en: Branding and visual communication }
       description:
-        es: Identidad visual, logotipo, paleta de colores y tipografía para expresar
-          la esencia de tu marca.
-        en: Visual identity, logo, colour palette and typography to express the
-          essence of your brand.
+        es: Identidad visual, logotipo, paleta de colores y tipografía para expresar la
+          esencia de tu marca.
+        en: Visual identity, logo, colour palette and typography to express the essence
+          of your brand.
     - title: { es: Marketing y redes sociales, en: Marketing and social media }
       description:
         es: Estrategia digital, planificación y gestión de redes con una comunicación
@@ -208,10 +208,10 @@ services:
           communication and content shaped for your audience.
     - title: { es: Creación de contenido, en: Content creation }
       description:
-        es: Reels, fotografía y contenido generado por usuarios (UGC). Ideas,
-          producción y edición para contar la historia de tu proyecto.
-        en: Reels, photography and user-generated content (UGC). Ideas, production
-          and editing to tell your project's story.
+        es: Reels, fotografía y contenido generado por usuarios (UGC). Ideas, producción
+          y edición para contar la historia de tu proyecto.
+        en: Reels, photography and user-generated content (UGC). Ideas, production and
+          editing to tell your project's story.
   portfolio:
     url: https://marvillarreal.my.canva.site/
     label: { es: Ver portfolio completo, en: View full portfolio }
@@ -220,10 +220,10 @@ services:
     items:
       - name: Nerea
         description:
-          es: Diseño del perfil de Instagram con una selección visual coherente de
-            colores y contenido para comunicar la identidad de la marca.
-          en: Instagram grid design with a consistent visual selection of colours
-            and content to communicate the brand's identity.
+          es: Diseño del perfil de Instagram con una selección visual coherente de colores
+            y contenido para comunicar la identidad de la marca.
+          en: Instagram grid design with a consistent visual selection of colours and
+            content to communicate the brand's identity.
         image:
           src: /images/portfolio/nerea.jpg
           alt:
@@ -232,10 +232,10 @@ services:
           position: center
       - name: Alexia Yoga
         description:
-          es: Desarrollo de identidad visual para una marca personal, con logotipo,
-            paleta de colores y tipografía de estilo armónico y suave.
-          en: Visual identity development for a personal brand, including a logo,
-            colour palette and typography with a harmonious, soft aesthetic.
+          es: Desarrollo de identidad visual para una marca personal, con logotipo, paleta
+            de colores y tipografía de estilo armónico y suave.
+          en: Visual identity development for a personal brand, including a logo, colour
+            palette and typography with a harmonious, soft aesthetic.
         image:
           src: /images/portfolio/alexia-yoga.jpg
           alt:
