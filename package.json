@@ -9,6 +9,7 @@
     "dev": "next dev",
     "validate:content": "node scripts/validate-content.cjs",
     "build": "next build",
+    "deploy": "npm run build",
     "prebuild": "npm run validate:content",
     "lint": "eslint .",
     "test": "node --test tests/*.test.cjs",
