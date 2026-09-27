@@ -39,9 +39,14 @@ function validateContent(rawContent, publicDirectory = path.join(process.cwd(), 
   if (!httpsUrl(content.site.spotifyArtistUrl) || !/^https:\/\/open\.spotify\.com\/(?:intl-[a-z-]+\/)?artist\/[A-Za-z0-9]+\/?(?:\?.*)?$/.test(content.site.spotifyArtistUrl)) {
     error("site.spotifyArtistUrl", "utiliza el enlace HTTPS del perfil de artista de Spotify.");
   }
+  if (content.site.logo) checkImage(content.site.logo.src, "site.logo");
   checkImage(content.seo.image, "seo.image");
   checkImage(content.hero.image.src, "hero.image");
   checkImage(content.biography.image.src, "biography.image");
+  for (const field of ["portfolio", "instagram"]) {
+    if (!httpsUrl(content.services[field].url)) error(`services.${field}.url`, "debe ser una URL HTTPS.");
+  }
+  content.services.portfolio.items.forEach((item, index) => checkImage(item.image.src, `services.portfolio.items.${index}.image`));
   const today = new Date().toISOString().slice(0, 10);
   const ids = new Set();
   const sources = new Set();

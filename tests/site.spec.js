@@ -57,6 +57,11 @@ test("navegación móvil abre, cierra con Escape y no desborda a ningún ancho",
     expect(overflowing, `desbordamiento a ${width}px`).toBe(false);
     await page.locator("#releases").screenshot({ path: testInfo.outputPath(`releases-${width}.png`) });
     await page.locator("#videos").screenshot({ path: testInfo.outputPath(`videos-${width}.png`) });
+    for (const image of await page.locator("#services article img").all()) {
+      await image.scrollIntoViewIfNeeded();
+      await expect.poll(() => image.evaluate((element) => element.naturalWidth)).toBeGreaterThan(0);
+    }
+    await page.locator("#services").screenshot({ path: testInfo.outputPath(`production-${width}.png`), style: "header { visibility: hidden !important; }" });
   }
   await page.setViewportSize({ width: 390, height: 844 });
   const trigger = page.locator("#menu-toggle");
@@ -79,6 +84,28 @@ test("muestra los lanzamientos ordenados y los dos reproductores Spotify", async
   if (releases.length) await expect(page.locator("#releases iframe").first()).toHaveAttribute("src", getSpotifyEmbedUrl(releases[0].spotifyUrl));
   await expect(page.locator("#releases iframe").last()).toHaveAttribute("src", /\/embed\/artist\/5Yq88YEjyRPaYnOumCq34g$/);
   for (const image of await page.locator("#releases img").all()) await expect.poll(() => image.evaluate((element) => element.naturalWidth)).toBeGreaterThan(0);
+});
+
+test("producción muestra los proyectos locales y enlaces independientes en ambos idiomas", async ({ page }) => {
+  await page.goto("/");
+  for (const language of ["es", "en"]) {
+    await page.selectOption("#site-language", language);
+    const section = page.locator("#services");
+    await expect(section.locator("h2")).toHaveText(content.services.title[language]);
+    await expect(section.locator("h4")).toHaveText(["Nerea", "Alexia Yoga"]);
+    const portfolio = section.getByRole("link", { name: content.services.portfolio.label[language] });
+    await expect(portfolio).toHaveAttribute("href", "https://marvillarreal.my.canva.site/");
+    await expect(portfolio).toHaveAttribute("target", "_blank");
+    await expect(portfolio).toHaveAttribute("rel", "noopener noreferrer");
+    await expect(section.getByRole("link", { name: content.services.instagram.label[language] })).toHaveAttribute("href", "https://www.instagram.com/marvillarreal_produccion/");
+    await expect(section.getByRole("link", { name: content.services.contactLabel[language] })).toHaveAttribute("href", "#contact");
+    await expect(section.locator("iframe")).toHaveCount(0);
+    for (const image of await section.locator("article img").all()) {
+      await image.scrollIntoViewIfNeeded();
+      await expect.poll(() => image.evaluate((element) => element.naturalWidth)).toBeGreaterThan(0);
+    }
+  }
+  await expect(page.locator('#social a[href="https://www.instagram.com/marvillarrealmusic"]')).toHaveCount(1);
 });
 
 test("YouTube carga al pulsar, conserva el orden y solo tiene un reproductor activo", async ({ page }) => {

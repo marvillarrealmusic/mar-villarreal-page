@@ -31,6 +31,20 @@ En GitHub, abre la carpeta `public/images/` y usa **Add file → Upload files**.
 
 Para reemplazar una foto manteniendo su nombre, sube la nueva con el mismo nombre y reemplaza el archivo. Para usar otro nombre, cambia la ruta `src` de la imagen correspondiente en `content/site.yml`. Las fotografías de portada y biografía tienen textos alternativos en los dos idiomas: actualízalos cuando haga falta.
 
+## Logo de la cabecera
+
+Guarda el logo original en `public/images/logo-mar.png` y añade este bloque dentro de `site` en `content/site.yml`:
+
+```yaml
+  logo:
+    src: /images/logo-mar.png
+    alt:
+      es: Logo de Mar Villarreal
+      en: Mar Villarreal logo
+```
+
+El logo sustituye al nombre de la cabecera y enlaza al inicio. Puedes reemplazar el archivo manteniendo su nombre o cambiar `src` para usar otra imagen. Si no se configura `site.logo`, se muestra `site.name`.
+
 ## Añadir un sencillo
 
 1. En Spotify, usa **Compartir → Copiar enlace** en una canción o sencillo.
@@ -75,6 +89,31 @@ El visitante pulsa la miniatura para reproducir el vídeo en la web. Si el autor
 | `navigation` | `releases` y `videos`, las etiquetas del menú |
 
 El segundo reproductor usa el perfil `site.spotifyArtistUrl`; Spotify controla qué canciones muestra. Consulta [la guía de Actions](../.github/workflows/README.md) si necesitas ejecutar la importación manualmente o resolver un fallo.
+
+## Servicios y portfolio de producción
+
+En `services` puedes editar el título, la presentación y los tres servicios en ambos idiomas. `contactLabel` cambia el enlace a la sección de contacto.
+
+El bloque `services.portfolio` contiene el enlace de Canva (`url`), el texto del botón (`label`), el título de proyectos (`title`) y la lista `items`. Los proyectos se muestran en el orden del YAML. Para ordenarlos, mueve un bloque completo; para eliminar uno, borra ese bloque. Puedes dejar `items: []` para mostrar solo los servicios y los enlaces.
+
+Ejemplo de un proyecto; copia el bloque entero para añadir otro:
+
+```yaml
+      - name: Nombre del proyecto
+        description:
+          es: Descripción breve del trabajo realizado.
+          en: A short description of the work completed.
+        image:
+          src: /images/portfolio/proyecto.jpg
+          alt:
+            es: Descripción de la imagen del proyecto
+            en: Description of the project image
+          position: center
+```
+
+Sube las imágenes a `public/images/portfolio/` y usa su ruta `/images/portfolio/...`. Puedes reemplazarlas manteniendo el nombre o actualizar `image.src`. Se muestran completas en un espacio 3:2. Estos archivos se editan manualmente y no los sobrescribe la importación de música y vídeos.
+
+`services.instagram.url` enlaza al perfil de producción y `label` controla su etiqueta bilingüe. Este enlace es independiente del Instagram musical de `social.items`. Los enlaces externos deben empezar por `https://` y se abren en otra pestaña. La web no incrusta Canva ni carga un feed de Instagram; cuando actualices el Canva, cambia también aquí cualquier imagen o texto que deba reflejarlo.
 
 ## Errores y publicación
 

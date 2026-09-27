@@ -3,6 +3,11 @@
 # Las imágenes se guardan en public/images y se indican con una ruta /images/.
 site:
   name: Mar Villarreal
+  logo:
+    src: /images/logo-mar.png
+    alt:
+      es: Logo de Mar Villarreal
+      en: Mar Villarreal logo
   url: https://www.marvillarreal.com
   contactEmail: info@marvillarreal.com
   spotifyArtistUrl: https://open.spotify.com/artist/5Yq88YEjyRPaYnOumCq34g
@@ -179,32 +184,67 @@ biography:
 
 services:
   eyebrow: { es: Trabajo creativo, en: Creative work }
-  title: { es: Ideas que toman forma, en: Ideas taking shape }
+  title: { es: Mar Villarreal Producción, en: Mar Villarreal Production }
   description:
-    es: También colaboro en proyectos que necesitan una mirada estratégica, cultural
-      y creativa.
-    en: I also collaborate on projects looking for a strategic, cultural and
-      creative perspective.
+    es: Ayudo a marcas y proyectos a encontrar su identidad y comunicarla. Combino
+      diseño visual, estrategia digital y creación de contenido para dar forma a
+      una presencia auténtica.
+    en: I help brands and projects find their identity and communicate it. I bring
+      together visual design, digital strategy and content creation to build an
+      authentic presence.
   contactLabel: { es: Hablemos de tu proyecto, en: Let’s talk about your project }
   items:
-    - title: { es: Estrategia de marca, en: Brand strategy }
+    - title: { es: Branding y comunicación visual, en: Branding and visual communication }
       description:
-        es: Identidad y dirección estratégica para crear marcas con personalidad y
-          conexión cultural.
-        en: Brand identity and strategic direction for businesses with personality and
-          cultural relevance.
-    - title: { es: Gestión de redes sociales, en: Social media management }
+        es: Identidad visual, logotipo, paleta de colores y tipografía para expresar
+          la esencia de tu marca.
+        en: Visual identity, logo, colour palette and typography to express the
+          essence of your brand.
+    - title: { es: Marketing y redes sociales, en: Marketing and social media }
       description:
-        es: Contenido y gestión de redes para fortalecer la comunidad y la presencia
-          digital.
-        en: Social content and account management to grow community and digital
-          presence.
-    - title: { es: Marketing digital, en: Digital marketing }
+        es: Estrategia digital, planificación y gestión de redes con una comunicación
+          coherente y contenido pensado para tu público.
+        en: Digital strategy, planning and social media management with consistent
+          communication and content shaped for your audience.
+    - title: { es: Creación de contenido, en: Content creation }
       description:
-        es: Ideas y campañas digitales pensadas para conectar con las personas y hacer
-          crecer proyectos.
-        en: Digital ideas and campaigns designed to connect with people and grow
-          ambitious projects.
+        es: Reels, fotografía y contenido generado por usuarios (UGC). Ideas,
+          producción y edición para contar la historia de tu proyecto.
+        en: Reels, photography and user-generated content (UGC). Ideas, production
+          and editing to tell your project's story.
+  portfolio:
+    url: https://marvillarreal.my.canva.site/
+    label: { es: Ver portfolio completo, en: View full portfolio }
+    title: { es: Proyectos seleccionados, en: Selected projects }
+    # Cambia el orden de estos bloques para ordenar los proyectos.
+    items:
+      - name: Nerea
+        description:
+          es: Diseño del perfil de Instagram con una selección visual coherente de
+            colores y contenido para comunicar la identidad de la marca.
+          en: Instagram grid design with a consistent visual selection of colours
+            and content to communicate the brand's identity.
+        image:
+          src: /images/portfolio/nerea.jpg
+          alt:
+            es: Diseño del perfil de Instagram de Nerea con fotografías de moda y naturaleza
+            en: Nerea Instagram grid design featuring fashion and nature photography
+          position: center
+      - name: Alexia Yoga
+        description:
+          es: Desarrollo de identidad visual para una marca personal, con logotipo,
+            paleta de colores y tipografía de estilo armónico y suave.
+          en: Visual identity development for a personal brand, including a logo,
+            colour palette and typography with a harmonious, soft aesthetic.
+        image:
+          src: /images/portfolio/alexia-yoga.jpg
+          alt:
+            es: Diseño del símbolo de identidad visual de Alexia Yoga
+            en: Visual identity symbol designed for Alexia Yoga
+          position: center
+  instagram:
+    url: https://www.instagram.com/marvillarreal_produccion/
+    label: { es: Instagram de producción, en: Production Instagram }
 
 social:
   eyebrow: { es: Sigamos en contacto, en: Stay connected }

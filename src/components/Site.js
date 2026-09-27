@@ -33,7 +33,9 @@ function Header({ content, language, setLanguage }) {
   return <>
     <a className={styles.skip} href="#main-content">{text(content.ui.skipToContent, language)}</a>
     <header className={styles.header}>
-      <a className={styles.wordmark} href="#home">{content.site.name}</a>
+      <a className={styles.wordmark} href="#home">{content.site.logo
+        ? <img className={styles.brandLogo} src={content.site.logo.src} alt={text(content.site.logo.alt, language)} width="5770" height="2541" decoding="async" />
+        : content.site.name}</a>
       <nav id="site-menu" className={styles.nav} aria-label={text(content.ui.navigationLabel, language)} hidden={!open}>
         {anchors.map((anchor) => <a key={anchor} href={`#${anchor}`} onClick={() => setOpen(false)}>{text(content.navigation[anchor], language)}</a>)}
       </nav>
@@ -116,7 +118,18 @@ export default function Site({ content }) {
       </section>
       <section id="services" className={`${styles.section} ${styles.services}`}><div className={styles.sectionHeading}><p className={styles.eyebrow}>{text(content.services.eyebrow, language)}</p><h2>{text(content.services.title, language)}</h2><p>{text(content.services.description, language)}</p></div>
         <div className={styles.serviceGrid}>{content.services.items.map((item, i) => <article className={styles.serviceCard} key={text(item.title, language)}><span className={styles.number} aria-hidden="true">0{i + 1}</span><h3>{text(item.title, language)}</h3><p>{text(item.description, language)}</p></article>)}</div>
-        <a className={styles.textLink} href="#contact">{text(content.services.contactLabel, language)} ↗</a>
+        {content.services.portfolio.items.length > 0 && <div className={styles.portfolio}>
+          <h3 className={styles.portfolioHeading}>{text(content.services.portfolio.title, language)}</h3>
+          <div className={styles.projectGrid}>{content.services.portfolio.items.map((project) => <article className={styles.projectCard} key={project.name}>
+            <SiteImage image={project.image} language={language} className={styles.projectImage} />
+            <h4>{project.name}</h4><p>{text(project.description, language)}</p>
+          </article>)}</div>
+        </div>}
+        <div className={styles.serviceActions}>
+          <a className={styles.primaryButton} href={content.services.portfolio.url} target="_blank" rel="noopener noreferrer">{text(content.services.portfolio.label, language)} <span aria-hidden="true">↗</span></a>
+          <a className={styles.productionInstagram} href={content.services.instagram.url} target="_blank" rel="noopener noreferrer"><SocialIcon name="Instagram" />{text(content.services.instagram.label, language)} <span aria-hidden="true">↗</span></a>
+          <a className={styles.textLink} href="#contact">{text(content.services.contactLabel, language)} <span aria-hidden="true">↗</span></a>
+        </div>
       </section>
       <section id="social" className={`${styles.section} ${styles.social}`}><div><p className={styles.eyebrow}>{text(content.social.eyebrow, language)}</p><h2>{text(content.social.title, language)}</h2><p>{text(content.social.description, language)}</p></div>
         <ul>{content.social.items.map((item) => <li key={item.name}><a href={item.url} target="_blank" rel="noopener noreferrer"><span className={styles.socialIcon}><SocialIcon name={item.name} /></span><span className={styles.socialName}>{item.name}</span><span className={styles.socialArrow} aria-hidden="true">↗</span></a></li>)}</ul>

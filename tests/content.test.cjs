@@ -30,6 +30,22 @@ test("schema rechaza idiomas ausentes y campos desconocidos", () => {
   assert.equal(schema.safeParse({ es: "Hola", en: "Hello", enn: "typo" }).success, false);
 });
 
+test("portfolio valida enlaces HTTPS, traducciones e imágenes locales", () => {
+  const data = loadContent();
+  data.services.portfolio.url = "http://example.com/";
+  data.services.instagram.url = "http://instagram.com/";
+  data.services.portfolio.items[0].image.src = "/images/portfolio/missing.png";
+  assert.throws(() => validateContent(data), (error) => {
+    assert.match(error.message, /services.portfolio.url/);
+    assert.match(error.message, /services.instagram.url/);
+    assert.match(error.message, /services.portfolio.items.0.image/);
+    return true;
+  });
+  const untranslated = loadContent();
+  delete untranslated.services.portfolio.items[0].description.en;
+  assert.throws(() => validateContent(untranslated), /services.portfolio.items.0.description.en/);
+});
+
 test("rechaza rutas de imágenes que escapan de la carpeta pública", () => {
  const data = loadContent();
  data.seo.image = "/images/../../secret.jpg";

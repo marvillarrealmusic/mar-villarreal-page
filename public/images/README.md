@@ -5,7 +5,10 @@ Cada archivo tiene una función concreta. Puedes reemplazar las fotografías edi
 | Archivo | Sección | Para qué se usa |
 | --- | --- | --- |
 | `hero.jpg` | Portada | Fotografía principal que acompaña el título de Mar. Se muestra en formato vertical. |
+| `logo-mar.png` | Cabecera | Logo de Mar que sustituye al nombre escrito cuando se configura `site.logo` en el YAML. Conserva el logo completo; se adapta al espacio disponible en móvil y escritorio. |
 | `biography.jpg` | Biografía | Fotografía junto al texto biográfico. También se muestra en formato vertical. |
+| `portfolio/nerea.jpg` | Mar Villarreal Producción | Diseño del perfil de Instagram de Nerea, extraído del portfolio de Canva de Mar y optimizado en JPEG para la web. |
+| `portfolio/alexia-yoga.jpg` | Mar Villarreal Producción | Símbolo de identidad visual de Alexia Yoga, extraído del portfolio de Canva de Mar. |
 | `releases/5iw3dCleo3lcYovu6GAOZB.jpg` | Últimos lanzamientos | Portada de AMAR. Generada por la importación. |
 | `releases/1B9WOBwcZYPALYEQ2ZAgh6.jpg` | Últimos lanzamientos | Portada de Rosa Pastel. Generada por la importación. |
 | `releases/4IQLfJMwO94ATJlDU2HFy0.jpg` | Últimos lanzamientos | Portada de Rincón Florido. Generada por la importación. |
@@ -20,6 +23,15 @@ Cada archivo tiene una función concreta. Puedes reemplazar las fotografías edi
 4. Guarda los cambios. La web se actualizará al volver a compilarse y publicarse.
 
 También puedes subir una imagen con otro nombre y cambiar la ruta en `content/site.yml`. Las rutas empiezan por `/images/`; por ejemplo, el archivo `public/images/biography.jpg` se referencia como `/images/biography.jpg`.
+
+## Imágenes del portfolio de producción
+
+Los proyectos de `services.portfolio.items` utilizan imágenes locales de `portfolio/`. Se muestran completas dentro de un espacio 3:2, sin recortarlas. Para sustituirlas, sube el nuevo archivo con el mismo nombre o cambia `image.src` y los textos alternativos en `content/site.yml`. No se sincronizan automáticamente con Canva.
+
+Fuentes de las imágenes iniciales, verificadas en el [portfolio de Mar](https://marvillarreal.my.canva.site/):
+
+- Nerea: `https://marvillarreal.my.canva.site/_assets/media/187bd212bfb941ae7650087d09f6af24.png`.
+- Alexia Yoga: `https://marvillarreal.my.canva.site/_assets/media/731edd5b18d74579ad9c9d5ac11ef29a.jpg`.
 
 ## Portadas y miniaturas automáticas
 

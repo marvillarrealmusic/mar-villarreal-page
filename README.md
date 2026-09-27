@@ -17,6 +17,8 @@ npm run dev
 
 Visita `http://localhost:3000`. Para cambiar contenido, consulta [la guía de edición](content/README.md).
 
+La sección «Mar Villarreal Producción» muestra servicios y proyectos desde `services` en el YAML. Sus imágenes son locales; los enlaces al portfolio de Canva y al Instagram de producción no necesitan credenciales ni consultas durante la compilación.
+
 ## Sincronizar música y vídeos
 
 Pega enlaces en `releases.sources` y `videos.sources` dentro del YAML. La Action **Sync Spotify and YouTube** se ejecuta al guardar ese archivo en `master` o mediante **Actions → Run workflow**, y guarda los resultados directamente en `master`. No necesita API keys. [Guía de automatización y permisos](.github/workflows/README.md).
